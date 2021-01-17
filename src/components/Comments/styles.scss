@@ -1,0 +1,120 @@
+
+$color_comments: #f2f3f5;
+$color_borders: rgba(#000000, 0.6);
+$content_color: white;
+$green: #3FBF3F;
+$azul: #1237bd;
+.image {
+    width: 100%;
+
+}
+
+.post {
+    margin-top: 0.5rem;
+    padding-top: 0.1rem;
+}
+
+.post-name {
+    color: $azul;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.post-date {
+    margin: 0 0 0.5rem;
+    padding: 0;
+    font-size: 0.6em;
+}
+
+.post-content {
+    background-color: $content_color;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.actions-post {
+    margin: 1rem 0;
+    display: flex;
+    .img-like{
+        width: 20px;
+        margin: 0px 5px;
+    }
+}
+
+.button-post {
+    padding: 0.6rem;
+    border: none;
+    color: #2e97fd;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    outline: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:active {
+        color: hsl(210, 93%, 18%);
+        background: blue($color: #000000);
+
+    };
+    &:disabled {
+        color: rgba(#FF0000, 0.3);
+    }
+}
+
+
+.img-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image-comment {
+        width: 2.5rem;
+        opacity: 0.3;
+    }
+}
+
+.content-comment {
+    background-color: $color_comments;
+    background-color: #f2f3f5;
+    padding: 0.2rem 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.count-comments {
+    padding: 1rem;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(#000000, 0.2);
+    font-size: 0.8rem;
+    color: $color_borders
+}
+
+.box-comment {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(#000000, 0.2);
+    border-radius: 5px;
+    padding: 1%;
+    width: 98%;
+    height: 100px;
+    font-size: 0.8rem;
+    &:focus {
+        outline: none;
+        border:1px solid $color_comments;
+        box-shadow: 0 0 10px #719ECE;
+    }
+}
+
+.button-comment {
+    background-color: $green;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 8px 0;
+    border-radius: 5px;
+}

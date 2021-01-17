@@ -1,0 +1,91 @@
+$azul: #1237bd;
+.topnav {
+    background-color: white;
+    width: 100%;
+    -webkit-box-shadow: 0.5px 3px 5px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0.5px 3px 5px 0px rgba(0,0,0,0.30);
+    box-shadow: 0.5px 3px 5px 0px rgba(0,0,0,0.30);
+  }
+  
+  .title {
+    text-align: right;
+    margin: 1rem;
+    font-size: 1.7rem;
+  }
+  
+  .content-input {
+    text-align: left;
+    margin: 1rem;
+    input {
+      width: 300px;
+      padding: 5px;
+      font-size: 1rem;
+    };
+    button {
+      padding: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .content-img{
+      display: flex;
+      .imguser{
+        width: 2rem;
+        margin: 0px 10px;
+      }
+    }
+    p{
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0;
+      color: $azul;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .title {
+      text-align: start;
+      font-size: 1rem;
+    }
+    .content-input {
+      text-align: end;
+      margin: 1rem;
+      input {
+        width: 200px;
+        padding: 5px;
+        font-size: 1rem;
+      };
+      button {
+        padding: 6px;
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  @media(max-width: 375px) {
+    .topnav {
+      height: 6rem;
+    }
+    .content-nav{
+      width: 100;;
+    }
+    .title {
+      text-align: start;
+      font-size: 1rem;
+    }
+    .content-input {
+      text-align: end;
+      margin-top: 1.5rem;
+      input {
+        width: 150px;
+        padding: 3px;
+        font-size: 0.8rem;
+      };
+      button {
+        padding: 4px;
+        font-size: 0.8rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
